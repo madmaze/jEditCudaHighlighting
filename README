@@ -1,0 +1,5 @@
+This will be the jEdit syntax highlighing file.
+
+It is based off of the original cplusplus.xml coming from the standard bundle of jEdit
+Hence any and all my changes are released under GPL.
+visit http://www.jedit.org/FAQ/legal-notice.html

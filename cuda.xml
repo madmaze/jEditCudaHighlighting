@@ -52,296 +52,325 @@
         <IMPORT DELEGATE="c::CORE"/>
 
         <KEYWORDS>
+        
+        
             <!-- CUDA -->
-            <LITERAL2>__GLOBAL__</LITERAL2>
-            <LITERAL2>__HOST__</LITERAL2>
-            <LITERAL2>__DEVICE__</LITERAL2>
-            <LITERAL2>__CONSTANT__</LITERAL2>
-            <LITERAL2>__SHARED__</LITERAL2>
             <LITERAL2>__global__</LITERAL2>
             <LITERAL2>__host__</LITERAL2>
             <LITERAL2>__device__</LITERAL2>
             <LITERAL2>__constant__</LITERAL2>
             <LITERAL2>__shared__</LITERAL2>
+        
+            <SEQ TYPE="LITERAL4">&gt;&gt;&gt;</SEQ>
+            <SEQ TYPE="LITERAL4">&lt;&lt;&lt;</SEQ>
             
             <!-- Cuda Vairables -->
-            <KEYWORD2> gridDim </KEYWORD2>
-            <KEYWORD2> blockIdx </KEYWORD2>
-            <KEYWORD2> blockDim </KEYWORD2>
-            <KEYWORD2> threadIdx </KEYWORD2>
+            <KEYWORD2>gridDim</KEYWORD2>
+            <KEYWORD2>blockIdx</KEYWORD2>
+            <KEYWORD2>blockDim</KEYWORD2>
+            <KEYWORD2>threadIdx</KEYWORD2>     
             
-            <!-- CUDA Atomic functions -->
-            <KEYWORD3> atomicAdd </KEYWORD3>
-            <KEYWORD3> atomicAnd </KEYWORD3>
-            <KEYWORD3> atomicCAS </KEYWORD3>
-            <KEYWORD3> atomicDec </KEYWORD3>
-            <KEYWORD3> atomicExch </KEYWORD3>
-            <KEYWORD3> atomicInc </KEYWORD3>
-            <KEYWORD3> atomicMax </KEYWORD3>
-            <KEYWORD3> atomicMin </KEYWORD3>
-            <KEYWORD3> atomicOr </KEYWORD3>
-            <KEYWORD3> atomicSub </KEYWORD3>
-            <KEYWORD3> atomicXor </KEYWORD3>
+             <!-- CUDA Atomic functions -->
+            <KEYWORD3>atomicAdd</KEYWORD3>
+            <KEYWORD3>atomicAnd</KEYWORD3>
+            <KEYWORD3>atomicCAS</KEYWORD3>
+            <KEYWORD3>atomicDec</KEYWORD3>
+            <KEYWORD3>atomicExch</KEYWORD3>
+            <KEYWORD3>atomicInc</KEYWORD3>
+            <KEYWORD3>atomicMax</KEYWORD3>
+            <KEYWORD3>atomicMin</KEYWORD3>
+            <KEYWORD3>atomicOr</KEYWORD3>
+            <KEYWORD3>atomicSub</KEYWORD3>
+            <KEYWORD3>atomicXor</KEYWORD3>
             
             <!-- Cuda runtime API functions -->
-            <KEYWORD3> cudaBindTexture </KEYWORD3>
-            <KEYWORD3> cudaBindTextureToArray </KEYWORD3>
-            <KEYWORD3> cudaChooseDevice </KEYWORD3>
-            <KEYWORD3> cudaConfigureCall </KEYWORD3>
-            <KEYWORD3> cudaCreateChannelDesc </KEYWORD3>
-            <KEYWORD3> cudaD3D10GetDevice </KEYWORD3>
-            <KEYWORD3> cudaD3D10MapResources </KEYWORD3>
-            <KEYWORD3> cudaD3D10RegisterResource </KEYWORD3>
-            <KEYWORD3> cudaD3D10ResourceGetMappedArray </KEYWORD3>
-            <KEYWORD3> cudaD3D10ResourceGetMappedPitch </KEYWORD3>
-            <KEYWORD3> cudaD3D10ResourceGetMappedPointer </KEYWORD3>
-            <KEYWORD3> cudaD3D10ResourceGetMappedSize </KEYWORD3>
-            <KEYWORD3> cudaD3D10ResourceGetSurfaceDimensions </KEYWORD3>
-            <KEYWORD3> cudaD3D10ResourceSetMapFlags </KEYWORD3>
-            <KEYWORD3> cudaD3D10SetDirect3DDevice </KEYWORD3>
-            <KEYWORD3> cudaD3D10UnmapResources </KEYWORD3>
-            <KEYWORD3> cudaD3D10UnregisterResource </KEYWORD3>
-            <KEYWORD3> cudaD3D9GetDevice </KEYWORD3>
-            <KEYWORD3> cudaD3D9GetDirect3DDevice </KEYWORD3>
-            <KEYWORD3> cudaD3D9MapResources </KEYWORD3>
-            <KEYWORD3> cudaD3D9RegisterResource </KEYWORD3>
-            <KEYWORD3> cudaD3D9ResourceGetMappedArray </KEYWORD3>
-            <KEYWORD3> cudaD3D9ResourceGetMappedPitch </KEYWORD3>
-            <KEYWORD3> cudaD3D9ResourceGetMappedPointer </KEYWORD3>
-            <KEYWORD3> cudaD3D9ResourceGetMappedSize </KEYWORD3>
-            <KEYWORD3> cudaD3D9ResourceGetSurfaceDimensions </KEYWORD3>
-            <KEYWORD3> cudaD3D9ResourceSetMapFlags </KEYWORD3>
-            <KEYWORD3> cudaD3D9SetDirect3DDevice </KEYWORD3>
-            <KEYWORD3> cudaD3D9UnmapResources </KEYWORD3>
-            <KEYWORD3> cudaD3D9UnregisterResource </KEYWORD3>
-            <KEYWORD3> cudaEventCreate </KEYWORD3>
-            <KEYWORD3> cudaEventDestroy </KEYWORD3>
-            <KEYWORD3> cudaEventElapsedTime </KEYWORD3>
-            <KEYWORD3> cudaEventQuery </KEYWORD3>
-            <KEYWORD3> cudaEventRecord </KEYWORD3>
-            <KEYWORD3> cudaEventSynchronize </KEYWORD3>
-            <KEYWORD3> cudaFree </KEYWORD3>
-            <KEYWORD3> cudaFreeArray </KEYWORD3>
-            <KEYWORD3> cudaFreeHost </KEYWORD3>
-            <KEYWORD3> cudaGetChannelDesc </KEYWORD3>
-            <KEYWORD3> cudaGetDevice </KEYWORD3>
-            <KEYWORD3> cudaGetDeviceCount </KEYWORD3>
-            <KEYWORD3> cudaGetDeviceProperties </KEYWORD3>
-            <KEYWORD3> cudaGetErrorString </KEYWORD3>
-            <KEYWORD3> cudaGetLastError </KEYWORD3>
-            <KEYWORD3> cudaGetSymbolAddress </KEYWORD3>
-            <KEYWORD3> cudaGetSymbolSize </KEYWORD3>
-            <KEYWORD3> cudaGetTextureAlignmentOffset </KEYWORD3>
-            <KEYWORD3> cudaGetTextureReference </KEYWORD3>
-            <KEYWORD3> cudaGLMapBufferObject </KEYWORD3>
-            <KEYWORD3> cudaGLRegisterBufferObject </KEYWORD3>
-            <KEYWORD3> cudaGLSetGLDevice </KEYWORD3>
-            <KEYWORD3> cudaGLUnmapBufferObject </KEYWORD3>
-            <KEYWORD3> cudaGLUnregisterBufferObject </KEYWORD3>
-            <KEYWORD3> cudaLaunch </KEYWORD3>
-            <KEYWORD3> cudaMalloc </KEYWORD3>
-            <KEYWORD3> cudaMalloc3D </KEYWORD3>
-            <KEYWORD3> cudaMalloc3DArray </KEYWORD3>
-            <KEYWORD3> cudaMallocArray </KEYWORD3>
-            <KEYWORD3> cudaMallocHost </KEYWORD3>
-            <KEYWORD3> cudaMallocPitch </KEYWORD3>
-            <KEYWORD3> cudaMemcpy </KEYWORD3>
-            <KEYWORD3> cudaMemcpy2D </KEYWORD3>
-            <KEYWORD3> cudaMemcpy2DArrayToArray </KEYWORD3>
-            <KEYWORD3> cudaMemcpy2DFromArray </KEYWORD3>
-            <KEYWORD3> cudaMemcpy2DToArray </KEYWORD3>
-            <KEYWORD3> cudaMemcpy3D </KEYWORD3>
-            <KEYWORD3> cudaMemcpyArrayToArray </KEYWORD3>
-            <KEYWORD3> cudaMemcpyFromArray </KEYWORD3>
-            <KEYWORD3> cudaMemcpyFromSymbol </KEYWORD3>
-            <KEYWORD3> cudaMemcpyToArray </KEYWORD3>
-            <KEYWORD3> cudaMemcpyToSymbol </KEYWORD3>
-            <KEYWORD3> cudaMemset </KEYWORD3>
-            <KEYWORD3> cudaMemset2D </KEYWORD3>
-            <KEYWORD3> cudaMemset3D </KEYWORD3>
-            <KEYWORD3> cudaSetDevice </KEYWORD3>
-            <KEYWORD3> cudaSetupArgument </KEYWORD3>
-            <KEYWORD3> cudaStreamCreate </KEYWORD3>
-            <KEYWORD3> cudaStreamDestroy </KEYWORD3>
-            <KEYWORD3> cudaStreamQuery </KEYWORD3>
-            <KEYWORD3> cudaStreamSynchronize </KEYWORD3>
-            <KEYWORD3> cudaThreadExit </KEYWORD3>
-            <KEYWORD3> cudaThreadSynchronize </KEYWORD3>
-            <KEYWORD3> cudaUnbindTexture </KEYWORD3>
+            <KEYWORD3>cudaBindTexture</KEYWORD3>
+            <KEYWORD3>cudaBindTextureToArray</KEYWORD3>
+            <KEYWORD3>cudaChooseDevice</KEYWORD3>
+            <KEYWORD3>cudaConfigureCall</KEYWORD3>
+            <KEYWORD3>cudaCreateChannelDesc</KEYWORD3>
+            <KEYWORD3>cudaD3D10GetDevice</KEYWORD3>
+            <KEYWORD3>cudaD3D10MapResources</KEYWORD3>
+            <KEYWORD3>cudaD3D10RegisterResource</KEYWORD3>
+            <KEYWORD3>cudaD3D10ResourceGetMappedArray</KEYWORD3>
+            <KEYWORD3>cudaD3D10ResourceGetMappedPitch</KEYWORD3>
+            <KEYWORD3>cudaD3D10ResourceGetMappedPointer</KEYWORD3>
+            <KEYWORD3>cudaD3D10ResourceGetMappedSize</KEYWORD3>
+            <KEYWORD3>cudaD3D10ResourceGetSurfaceDimensions</KEYWORD3>
+            <KEYWORD3>cudaD3D10ResourceSetMapFlags</KEYWORD3>
+            <KEYWORD3>cudaD3D10SetDirect3DDevice</KEYWORD3>
+            <KEYWORD3>cudaD3D10UnmapResources</KEYWORD3>
+            <KEYWORD3>cudaD3D10UnregisterResource</KEYWORD3>
+            <KEYWORD3>cudaD3D9GetDevice</KEYWORD3>
+            <KEYWORD3>cudaD3D9GetDirect3DDevice</KEYWORD3>
+            <KEYWORD3>cudaD3D9MapResources</KEYWORD3>
+            <KEYWORD3>cudaD3D9RegisterResource</KEYWORD3>
+            <KEYWORD3>cudaD3D9ResourceGetMappedArray</KEYWORD3>
+            <KEYWORD3>cudaD3D9ResourceGetMappedPitch</KEYWORD3>
+            <KEYWORD3>cudaD3D9ResourceGetMappedPointer</KEYWORD3>
+            <KEYWORD3>cudaD3D9ResourceGetMappedSize</KEYWORD3>
+            <KEYWORD3>cudaD3D9ResourceGetSurfaceDimensions</KEYWORD3>
+            <KEYWORD3>cudaD3D9ResourceSetMapFlags</KEYWORD3>
+            <KEYWORD3>cudaD3D9SetDirect3DDevice</KEYWORD3>
+            <KEYWORD3>cudaD3D9UnmapResources</KEYWORD3>
+            <KEYWORD3>cudaD3D9UnregisterResource</KEYWORD3>
+            <KEYWORD3>cudaEventCreate</KEYWORD3>
+            <KEYWORD3>cudaEventDestroy</KEYWORD3>
+            <KEYWORD3>cudaEventElapsedTime</KEYWORD3>
+            <KEYWORD3>cudaEventQuery</KEYWORD3>
+            <KEYWORD3>cudaEventRecord</KEYWORD3>
+            <KEYWORD3>cudaEventSynchronize</KEYWORD3>
+            <KEYWORD3>cudaFree</KEYWORD3>
+            <KEYWORD3>cudaFreeArray</KEYWORD3>
+            <KEYWORD3>cudaFreeHost</KEYWORD3>
+            <KEYWORD3>cudaGetChannelDesc</KEYWORD3>
+            <KEYWORD3>cudaGetDevice</KEYWORD3>
+            <KEYWORD3>cudaGetDeviceCount</KEYWORD3>
+            <KEYWORD3>cudaGetDeviceProperties</KEYWORD3>
+            <KEYWORD3>cudaGetErrorString</KEYWORD3>
+            <KEYWORD3>cudaGetLastError</KEYWORD3>
+            <KEYWORD3>cudaGetSymbolAddress</KEYWORD3>
+            <KEYWORD3>cudaGetSymbolSize</KEYWORD3>
+            <KEYWORD3>cudaGetTextureAlignmentOffset</KEYWORD3>
+            <KEYWORD3>cudaGetTextureReference</KEYWORD3>
+            <KEYWORD3>cudaGLMapBufferObject</KEYWORD3>
+            <KEYWORD3>cudaGLRegisterBufferObject</KEYWORD3>
+            <KEYWORD3>cudaGLSetGLDevice</KEYWORD3>
+            <KEYWORD3>cudaGLUnmapBufferObject</KEYWORD3>
+            <KEYWORD3>cudaGLUnregisterBufferObject</KEYWORD3>
+            <KEYWORD3>cudaLaunch</KEYWORD3>
+            <KEYWORD3>cudaMalloc</KEYWORD3>
+            <KEYWORD3>cudaMalloc3D</KEYWORD3>
+            <KEYWORD3>cudaMalloc3DArray</KEYWORD3>
+            <KEYWORD3>cudaMallocArray</KEYWORD3>
+            <KEYWORD3>cudaMallocHost</KEYWORD3>
+            <KEYWORD3>cudaMallocPitch</KEYWORD3>
+            <KEYWORD3>cudaMemcpy</KEYWORD3>
+            <KEYWORD3>cudaMemcpy2D</KEYWORD3>
+            <KEYWORD3>cudaMemcpy2DArrayToArray</KEYWORD3>
+            <KEYWORD3>cudaMemcpy2DFromArray</KEYWORD3>
+            <KEYWORD3>cudaMemcpy2DToArray</KEYWORD3>
+            <KEYWORD3>cudaMemcpy3D</KEYWORD3>
+            <KEYWORD3>cudaMemcpyArrayToArray</KEYWORD3>
+            <KEYWORD3>cudaMemcpyFromArray</KEYWORD3>
+            <KEYWORD3>cudaMemcpyFromSymbol</KEYWORD3>
+            <KEYWORD3>cudaMemcpyToArray</KEYWORD3>
+            <KEYWORD3>cudaMemcpyToSymbol</KEYWORD3>
+            <KEYWORD3>cudaMemset</KEYWORD3>
+            <KEYWORD3>cudaMemset2D</KEYWORD3>
+            <KEYWORD3>cudaMemset3D</KEYWORD3>
+            <KEYWORD3>cudaSetDevice</KEYWORD3>
+            <KEYWORD3>cudaSetupArgument</KEYWORD3>
+            <KEYWORD3>cudaStreamCreate</KEYWORD3>
+            <KEYWORD3>cudaStreamDestroy</KEYWORD3>
+            <KEYWORD3>cudaStreamQuery</KEYWORD3>
+            <KEYWORD3>cudaStreamSynchronize</KEYWORD3>
+            <KEYWORD3>cudaThreadExit</KEYWORD3>
+            <KEYWORD3>cudaThreadSynchronize</KEYWORD3>
+            <KEYWORD3>cudaUnbindTexture</KEYWORD3>
             
             <!-- Cuda driver API functions -->
-            <KEYWORD3> cuArray3DCreate </KEYWORD3>
-            <KEYWORD3> cuArray3DGetDescriptor </KEYWORD3>
-            <KEYWORD3> cuArrayCreate </KEYWORD3>
-            <KEYWORD3> cuArrayDestroy </KEYWORD3>
-            <KEYWORD3> cuArrayGetDescriptor </KEYWORD3>
-            <KEYWORD3> cuCtxAttach </KEYWORD3>
-            <KEYWORD3> cuCtxCreate </KEYWORD3>
-            <KEYWORD3> cuCtxDestroy </KEYWORD3>
-            <KEYWORD3> cuCtxDetach </KEYWORD3>
-            <KEYWORD3> cuCtxGetDevice </KEYWORD3>
-            <KEYWORD3> cuCtxPopCurrent </KEYWORD3>
-            <KEYWORD3> cuCtxPushCurrent </KEYWORD3>
-            <KEYWORD3> cuCtxSynchronize </KEYWORD3>
-            <KEYWORD3> cuD3D10CtxCreate </KEYWORD3>
-            <KEYWORD3> cuD3D10GetDevice </KEYWORD3>
-            <KEYWORD3> cuD3D10MapResources </KEYWORD3>
-            <KEYWORD3> cuD3D10RegisterResource </KEYWORD3>
-            <KEYWORD3> cuD3D10ResourceGetMappedArray </KEYWORD3>
-            <KEYWORD3> cuD3D10ResourceGetMappedPitch </KEYWORD3>
-            <KEYWORD3> cuD3D10ResourceGetMappedPointer </KEYWORD3>
-            <KEYWORD3> cuD3D10ResourceGetMappedSize </KEYWORD3>
-            <KEYWORD3> cuD3D10ResourceGetSurfaceDimensions </KEYWORD3>
-            <KEYWORD3> cuD3D10ResourceSetMapFlags </KEYWORD3>
-            <KEYWORD3> cuD3D10UnmapResources </KEYWORD3>
-            <KEYWORD3> cuD3D10UnregisterResource </KEYWORD3>
-            <KEYWORD3> cuD3D9CtxCreate </KEYWORD3>
-            <KEYWORD3> cuD3D9GetDevice </KEYWORD3>
-            <KEYWORD3> cuD3D9GetDirect3DDevice </KEYWORD3>
-            <KEYWORD3> cuD3D9MapResources </KEYWORD3>
-            <KEYWORD3> cuD3D9RegisterResource </KEYWORD3>
-            <KEYWORD3> cuD3D9ResourceGetMappedArray </KEYWORD3>
-            <KEYWORD3> cuD3D9ResourceGetMappedPitch </KEYWORD3>
-            <KEYWORD3> cuD3D9ResourceGetMappedPointer </KEYWORD3>
-            <KEYWORD3> cuD3D9ResourceGetMappedSize </KEYWORD3>
-            <KEYWORD3> cuD3D9ResourceGetSurfaceDimensions </KEYWORD3>
-            <KEYWORD3> cuD3D9ResourceSetMapFlags </KEYWORD3>
-            <KEYWORD3> cuD3D9UnmapResources </KEYWORD3>
-            <KEYWORD3> cuD3D9UnregisterResource </KEYWORD3>
-            <KEYWORD3> cuDeviceComputeCapability </KEYWORD3>
-            <KEYWORD3> cuDeviceGet </KEYWORD3>
-            <KEYWORD3> cuDeviceGetAttribute </KEYWORD3>
-            <KEYWORD3> cuDeviceGetCount </KEYWORD3>
-            <KEYWORD3> cuDeviceGetName </KEYWORD3>
-            <KEYWORD3> cuDeviceGetProperties </KEYWORD3>
-            <KEYWORD3> cuDeviceTotalMem </KEYWORD3>
-            <KEYWORD3> cuEventCreate </KEYWORD3>
-            <KEYWORD3> cuEventDestroy </KEYWORD3>
-            <KEYWORD3> cuEventElapsedTime </KEYWORD3>
-            <KEYWORD3> cuEventQuery </KEYWORD3>
-            <KEYWORD3> cuEventRecord </KEYWORD3>
-            <KEYWORD3> cuEventSynchronize </KEYWORD3>
-            <KEYWORD3> cuFuncSetBlockShape </KEYWORD3>
-            <KEYWORD3> cuFuncSetSharedSize </KEYWORD3>
-            <KEYWORD3> cuGLCtxCreate </KEYWORD3>
-            <KEYWORD3> cuGLInit </KEYWORD3>
-            <KEYWORD3> cuGLMapBufferObject </KEYWORD3>
-            <KEYWORD3> cuGLRegisterBufferObject </KEYWORD3>
-            <KEYWORD3> cuGLUnmapBufferObject </KEYWORD3>
-            <KEYWORD3> cuGLUnregisterBufferObject </KEYWORD3>
-            <KEYWORD3> cuInit </KEYWORD3>
-            <KEYWORD3> cuLaunch </KEYWORD3>
-            <KEYWORD3> cuLaunchGrid </KEYWORD3>
-            <KEYWORD3> cuMemAlloc </KEYWORD3>
-            <KEYWORD3> cuMemAllocHost </KEYWORD3>
-            <KEYWORD3> cuMemAllocPitch </KEYWORD3>
-            <KEYWORD3> cuMemcpy2D </KEYWORD3>
-            <KEYWORD3> cuMemcpy3D </KEYWORD3>
-            <KEYWORD3> cuMemcpyAtoA </KEYWORD3>
-            <KEYWORD3> cuMemcpyAtoD </KEYWORD3>
-            <KEYWORD3> cuMemcpyAtoH </KEYWORD3>
-            <KEYWORD3> cuMemcpyDtoA </KEYWORD3>
-            <KEYWORD3> cuMemcpyDtoD </KEYWORD3>
-            <KEYWORD3> cuMemcpyDtoH </KEYWORD3>
-            <KEYWORD3> cuMemcpyHtoA </KEYWORD3>
-            <KEYWORD3> cuMemcpyHtoD </KEYWORD3>
-            <KEYWORD3> cuMemFree </KEYWORD3>
-            <KEYWORD3> cuMemFreeHost </KEYWORD3>
-            <KEYWORD3> cuMemGetAddressRange </KEYWORD3>
-            <KEYWORD3> cuMemGetInfo </KEYWORD3>
-            <KEYWORD3> cuMemset </KEYWORD3>
-            <KEYWORD3> cuMemset2D </KEYWORD3>
-            <KEYWORD3> cuModuleGetFunction </KEYWORD3>
-            <KEYWORD3> cuModuleGetGlobal </KEYWORD3>
-            <KEYWORD3> cuModuleGetTexRef </KEYWORD3>
-            <KEYWORD3> cuModuleLoad </KEYWORD3>
-            <KEYWORD3> cuModuleLoadData </KEYWORD3>
-            <KEYWORD3> cuModuleLoadDataEx </KEYWORD3>
-            <KEYWORD3> cuModuleLoadFatBinary </KEYWORD3>
-            <KEYWORD3> cuModuleUnload </KEYWORD3>
-            <KEYWORD3> cuParamSetf </KEYWORD3>
-            <KEYWORD3> cuParamSeti </KEYWORD3>
-            <KEYWORD3> cuParamSetSize </KEYWORD3>
-            <KEYWORD3> cuParamSetTexRef </KEYWORD3>
-            <KEYWORD3> cuParamSetv </KEYWORD3>
-            <KEYWORD3> cuStreamCreate </KEYWORD3>
-            <KEYWORD3> cuStreamDestroy </KEYWORD3>
-            <KEYWORD3> cuStreamQuery </KEYWORD3>
-            <KEYWORD3> cuStreamSynchronize </KEYWORD3>
-            <KEYWORD3> cuTexRefCreate </KEYWORD3>
-            <KEYWORD3> cuTexRefDestroy </KEYWORD3>
-            <KEYWORD3> cuTexRefGetAddress </KEYWORD3>
-            <KEYWORD3> cuTexRefGetAddressMode </KEYWORD3>
-            <KEYWORD3> cuTexRefGetArray </KEYWORD3>
-            <KEYWORD3> cuTexRefGetFilterMode </KEYWORD3>
-            <KEYWORD3> cuTexRefGetFlags </KEYWORD3>
-            <KEYWORD3> cuTexRefGetFormat </KEYWORD3>
-            <KEYWORD3> cuTexRefSetAddress </KEYWORD3>
-            <KEYWORD3> cuTexRefSetAddressMode </KEYWORD3>
-            <KEYWORD3> cuTexRefSetArray </KEYWORD3>
-            <KEYWORD3> cuTexRefSetFilterMode </KEYWORD3>
-            <KEYWORD3> cuTexRefSetFlags </KEYWORD3>
-            <KEYWORD3> cuTexRefSetFormat </KEYWORD3>
+            <KEYWORD3>cuArray3DCreate</KEYWORD3>
+            <KEYWORD3>cuArray3DGetDescriptor</KEYWORD3>
+            <KEYWORD3>cuArrayCreate</KEYWORD3>
+            <KEYWORD3>cuArrayDestroy</KEYWORD3>
+            <KEYWORD3>cuArrayGetDescriptor</KEYWORD3>
+            <KEYWORD3>cuCtxAttach</KEYWORD3>
+            <KEYWORD3>cuCtxCreate</KEYWORD3>
+            <KEYWORD3>cuCtxDestroy</KEYWORD3>
+            <KEYWORD3>cuCtxDetach</KEYWORD3>
+            <KEYWORD3>cuCtxGetDevice</KEYWORD3>
+            <KEYWORD3>cuCtxPopCurrent</KEYWORD3>
+            <KEYWORD3>cuCtxPushCurrent</KEYWORD3>
+            <KEYWORD3>cuCtxSynchronize</KEYWORD3>
+            <KEYWORD3>cuD3D10CtxCreate</KEYWORD3>
+            <KEYWORD3>cuD3D10GetDevice</KEYWORD3>
+            <KEYWORD3>cuD3D10MapResources</KEYWORD3>
+            <KEYWORD3>cuD3D10RegisterResource</KEYWORD3>
+            <KEYWORD3>cuD3D10ResourceGetMappedArray</KEYWORD3>
+            <KEYWORD3>cuD3D10ResourceGetMappedPitch</KEYWORD3>
+            <KEYWORD3>cuD3D10ResourceGetMappedPointer</KEYWORD3>
+            <KEYWORD3>cuD3D10ResourceGetMappedSize</KEYWORD3>
+            <KEYWORD3>cuD3D10ResourceGetSurfaceDimensions</KEYWORD3>
+            <KEYWORD3>cuD3D10ResourceSetMapFlags</KEYWORD3>
+            <KEYWORD3>cuD3D10UnmapResources</KEYWORD3>
+            <KEYWORD3>cuD3D10UnregisterResource</KEYWORD3>
+            <KEYWORD3>cuD3D9CtxCreate</KEYWORD3>
+            <KEYWORD3>cuD3D9GetDevice</KEYWORD3>
+            <KEYWORD3>cuD3D9GetDirect3DDevice</KEYWORD3>
+            <KEYWORD3>cuD3D9MapResources</KEYWORD3>
+            <KEYWORD3>cuD3D9RegisterResource</KEYWORD3>
+            <KEYWORD3>cuD3D9ResourceGetMappedArray</KEYWORD3>
+            <KEYWORD3>cuD3D9ResourceGetMappedPitch</KEYWORD3>
+            <KEYWORD3>cuD3D9ResourceGetMappedPointer</KEYWORD3>
+            <KEYWORD3>cuD3D9ResourceGetMappedSize</KEYWORD3>
+            <KEYWORD3>cuD3D9ResourceGetSurfaceDimensions</KEYWORD3>
+            <KEYWORD3>cuD3D9ResourceSetMapFlags</KEYWORD3>
+            <KEYWORD3>cuD3D9UnmapResources</KEYWORD3>
+            <KEYWORD3>cuD3D9UnregisterResource</KEYWORD3>
+            <KEYWORD3>cuDeviceComputeCapability</KEYWORD3>
+            <KEYWORD3>cuDeviceGet</KEYWORD3>
+            <KEYWORD3>cuDeviceGetAttribute</KEYWORD3>
+            <KEYWORD3>cuDeviceGetCount</KEYWORD3>
+            <KEYWORD3>cuDeviceGetName</KEYWORD3>
+            <KEYWORD3>cuDeviceGetProperties</KEYWORD3>
+            <KEYWORD3>cuDeviceTotalMem</KEYWORD3>
+            <KEYWORD3>cuEventCreate</KEYWORD3>
+            <KEYWORD3>cuEventDestroy</KEYWORD3>
+            <KEYWORD3>cuEventElapsedTime</KEYWORD3>
+            <KEYWORD3>cuEventQuery</KEYWORD3>
+            <KEYWORD3>cuEventRecord</KEYWORD3>
+            <KEYWORD3>cuEventSynchronize</KEYWORD3>
+            <KEYWORD3>cuFuncSetBlockShape</KEYWORD3>
+            <KEYWORD3>cuFuncSetSharedSize</KEYWORD3>
+            <KEYWORD3>cuGLCtxCreate</KEYWORD3>
+            <KEYWORD3>cuGLInit</KEYWORD3>
+            <KEYWORD3>cuGLMapBufferObject</KEYWORD3>
+            <KEYWORD3>cuGLRegisterBufferObject</KEYWORD3>
+            <KEYWORD3>cuGLUnmapBufferObject</KEYWORD3>
+            <KEYWORD3>cuGLUnregisterBufferObject</KEYWORD3>
+            <KEYWORD3>cuInit</KEYWORD3>
+            <KEYWORD3>cuLaunch</KEYWORD3>
+            <KEYWORD3>cuLaunchGrid</KEYWORD3>
+            <KEYWORD3>cuMemAlloc</KEYWORD3>
+            <KEYWORD3>cuMemAllocHost</KEYWORD3>
+            <KEYWORD3>cuMemAllocPitch</KEYWORD3>
+            <KEYWORD3>cuMemcpy2D</KEYWORD3>
+            <KEYWORD3>cuMemcpy3D</KEYWORD3>
+            <KEYWORD3>cuMemcpyAtoA</KEYWORD3>
+            <KEYWORD3>cuMemcpyAtoD</KEYWORD3>
+            <KEYWORD3>cuMemcpyAtoH</KEYWORD3>
+            <KEYWORD3>cuMemcpyDtoA</KEYWORD3>
+            <KEYWORD3>cuMemcpyDtoD</KEYWORD3>
+            <KEYWORD3>cuMemcpyDtoH</KEYWORD3>
+            <KEYWORD3>cuMemcpyHtoA</KEYWORD3>
+            <KEYWORD3>cuMemcpyHtoD</KEYWORD3>
+            <KEYWORD3>cuMemFree</KEYWORD3>
+            <KEYWORD3>cuMemFreeHost</KEYWORD3>
+            <KEYWORD3>cuMemGetAddressRange</KEYWORD3>
+            <KEYWORD3>cuMemGetInfo</KEYWORD3>
+            <KEYWORD3>cuMemset</KEYWORD3>
+            <KEYWORD3>cuMemset2D</KEYWORD3>
+            <KEYWORD3>cuModuleGetFunction</KEYWORD3>
+            <KEYWORD3>cuModuleGetGlobal</KEYWORD3>
+            <KEYWORD3>cuModuleGetTexRef</KEYWORD3>
+            <KEYWORD3>cuModuleLoad</KEYWORD3>
+            <KEYWORD3>cuModuleLoadData</KEYWORD3>
+            <KEYWORD3>cuModuleLoadDataEx</KEYWORD3>
+            <KEYWORD3>cuModuleLoadFatBinary</KEYWORD3>
+            <KEYWORD3>cuModuleUnload</KEYWORD3>
+            <KEYWORD3>cuParamSetf</KEYWORD3>
+            <KEYWORD3>cuParamSeti</KEYWORD3>
+            <KEYWORD3>cuParamSetSize</KEYWORD3>
+            <KEYWORD3>cuParamSetTexRef</KEYWORD3>
+            <KEYWORD3>cuParamSetv</KEYWORD3>
+            <KEYWORD3>cuStreamCreate</KEYWORD3>
+            <KEYWORD3>cuStreamDestroy</KEYWORD3>
+            <KEYWORD3>cuStreamQuery</KEYWORD3>
+            <KEYWORD3>cuStreamSynchronize</KEYWORD3>
+            <KEYWORD3>cuTexRefCreate</KEYWORD3>
+            <KEYWORD3>cuTexRefDestroy</KEYWORD3>
+            <KEYWORD3>cuTexRefGetAddress</KEYWORD3>
+            <KEYWORD3>cuTexRefGetAddressMode</KEYWORD3>
+            <KEYWORD3>cuTexRefGetArray</KEYWORD3>
+            <KEYWORD3>cuTexRefGetFilterMode</KEYWORD3>
+            <KEYWORD3>cuTexRefGetFlags</KEYWORD3>
+            <KEYWORD3>cuTexRefGetFormat</KEYWORD3>
+            <KEYWORD3>cuTexRefSetAddress</KEYWORD3>
+            <KEYWORD3>cuTexRefSetAddressMode</KEYWORD3>
+            <KEYWORD3>cuTexRefSetArray</KEYWORD3>
+            <KEYWORD3>cuTexRefSetFilterMode</KEYWORD3>
+            <KEYWORD3>cuTexRefSetFlags</KEYWORD3>
+            <KEYWORD3>cuTexRefSetFormat</KEYWORD3>
             
             <!-- Cuda device functions -->
-            <KEYWORD3> tex1D </KEYWORD3>
-            <KEYWORD3> tex1Dfetch </KEYWORD3>
-            <KEYWORD3> tex2D </KEYWORD3>
-            <KEYWORD3> __float_as_int </KEYWORD3>
-            <KEYWORD3> __int_as_float </KEYWORD3>
-            <KEYWORD3> __float2int_rn </KEYWORD3>
-            <KEYWORD3> __float2int_rz </KEYWORD3>
-            <KEYWORD3> __float2int_ru </KEYWORD3>
-            <KEYWORD3> __float2int_rd </KEYWORD3>
-            <KEYWORD3> __float2uint_rn </KEYWORD3>
-            <KEYWORD3> __float2uint_rz </KEYWORD3>
-            <KEYWORD3> __float2uint_ru </KEYWORD3>
-            <KEYWORD3> __float2uint_rd </KEYWORD3>
-            <KEYWORD3> __int2float_rn </KEYWORD3>
-            <KEYWORD3> __int2float_rz </KEYWORD3>
-            <KEYWORD3> __int2float_ru </KEYWORD3>
-            <KEYWORD3> __int2float_rd </KEYWORD3>
-            <KEYWORD3> __uint2float_rn </KEYWORD3>
-            <KEYWORD3> __uint2float_rz </KEYWORD3>
-            <KEYWORD3> __uint2float_ru </KEYWORD3>
-            <KEYWORD3> __uint2float_rd </KEYWORD3>
-            <KEYWORD3> __fadd_rz </KEYWORD3>
-            <KEYWORD3> __fmul_rz </KEYWORD3>
-            <KEYWORD3> __fdividef </KEYWORD3>
-            <KEYWORD3> __mul24 </KEYWORD3>
-            <KEYWORD3> __umul24 </KEYWORD3>
-            <KEYWORD3> __mulhi </KEYWORD3>
-            <KEYWORD3> __umulhi </KEYWORD3>
-            <KEYWORD3> __mul64hi </KEYWORD3>
-            <KEYWORD3> __umul64hi </KEYWORD3>
-            <KEYWORD3> min </KEYWORD3>
-            <KEYWORD3> umin </KEYWORD3>
-            <KEYWORD3> fminf </KEYWORD3>
-            <KEYWORD3> fmin </KEYWORD3>
-            <KEYWORD3> max </KEYWORD3>
-            <KEYWORD3> umax </KEYWORD3>
-            <KEYWORD3> fmaxf </KEYWORD3>
-            <KEYWORD3> fmax </KEYWORD3>
-            <KEYWORD3> abs </KEYWORD3>
-  	    <KEYWORD3> fabsf </KEYWORD3>
-  	    <KEYWORD3> fabs </KEYWORD3>
-  	    <KEYWORD3> sqrtf </KEYWORD3>
-  	    <KEYWORD3> sqrt </KEYWORD3>
-  	    <KEYWORD3> sinf </KEYWORD3>
-  	    <KEYWORD3> __sinf </KEYWORD3>
-  	    <KEYWORD3> sin </KEYWORD3>
-  	    <KEYWORD3> cosf </KEYWORD3>
-  	    <KEYWORD3> __cosf </KEYWORD3>
-  	    <KEYWORD3> cos </KEYWORD3>
-  	    <KEYWORD3> sincosf </KEYWORD3>
-  	    <KEYWORD3> __sincosf </KEYWORD3>
-  	    <KEYWORD3> expf </KEYWORD3>
-  	    <KEYWORD3> __expf </KEYWORD3>
-  	    <KEYWORD3> exp </KEYWORD3>
-  	    <KEYWORD3> logf </KEYWORD3>
-  	    <KEYWORD3> __logf </KEYWORD3>
-  	    <KEYWORD3> log </KEYWORD3>
-            
+            <KEYWORD3>tex1D</KEYWORD3>
+            <KEYWORD3>tex1Dfetch</KEYWORD3>
+            <KEYWORD3>tex2D</KEYWORD3>
+            <KEYWORD3>__float_as_int</KEYWORD3>
+            <KEYWORD3>__int_as_float</KEYWORD3>
+            <KEYWORD3>__float2int_rn</KEYWORD3>
+            <KEYWORD3>__float2int_rz</KEYWORD3>
+            <KEYWORD3>__float2int_ru</KEYWORD3>
+            <KEYWORD3>__float2int_rd</KEYWORD3>
+            <KEYWORD3>__float2uint_rn</KEYWORD3>
+            <KEYWORD3>__float2uint_rz</KEYWORD3>
+            <KEYWORD3>__float2uint_ru</KEYWORD3>
+            <KEYWORD3>__float2uint_rd</KEYWORD3>
+            <KEYWORD3>__int2float_rn</KEYWORD3>
+            <KEYWORD3>__int2float_rz</KEYWORD3>
+            <KEYWORD3>__int2float_ru</KEYWORD3>
+            <KEYWORD3>__int2float_rd</KEYWORD3>
+            <KEYWORD3>__uint2float_rn</KEYWORD3>
+            <KEYWORD3>__uint2float_rz</KEYWORD3>
+            <KEYWORD3>__uint2float_ru</KEYWORD3>
+            <KEYWORD3>__uint2float_rd</KEYWORD3>
+            <KEYWORD3>__fadd_rz</KEYWORD3>
+            <KEYWORD3>__fmul_rz</KEYWORD3>
+            <KEYWORD3>__fdividef</KEYWORD3>
+            <KEYWORD3>__mul24</KEYWORD3>
+            <KEYWORD3>__umul24</KEYWORD3>
+            <KEYWORD3>__mulhi</KEYWORD3>
+            <KEYWORD3>__umulhi</KEYWORD3>
+            <KEYWORD3>__mul64hi</KEYWORD3>
+            <KEYWORD3>__umul64hi</KEYWORD3>
+            <KEYWORD3>min</KEYWORD3>
+            <KEYWORD3>umin</KEYWORD3>
+            <KEYWORD3>fminf</KEYWORD3>
+            <KEYWORD3>fmin</KEYWORD3>
+            <KEYWORD3>max</KEYWORD3>
+            <KEYWORD3>umax</KEYWORD3>
+            <KEYWORD3>fmaxf</KEYWORD3>
+            <KEYWORD3>fmax</KEYWORD3>
+            <KEYWORD3>abs</KEYWORD3>
+  	    <KEYWORD3>fabsf</KEYWORD3>
+  	    <KEYWORD3>fabs</KEYWORD3>
+  	    <KEYWORD3>sqrtf</KEYWORD3>
+  	    <KEYWORD3>sqrt</KEYWORD3>
+  	    <KEYWORD3>sinf</KEYWORD3>
+  	    <KEYWORD3>__sinf</KEYWORD3>
+  	    <KEYWORD3>sin</KEYWORD3>
+  	    <KEYWORD3>cosf</KEYWORD3>
+  	    <KEYWORD3>__cosf</KEYWORD3>
+  	    <KEYWORD3>cos</KEYWORD3>
+  	    <KEYWORD3>sincosf</KEYWORD3>
+  	    <KEYWORD3>__sincosf</KEYWORD3>
+  	    <KEYWORD3>expf</KEYWORD3>
+  	    <KEYWORD3>__expf</KEYWORD3>
+  	    <KEYWORD3>exp</KEYWORD3>
+  	    <KEYWORD3>logf</KEYWORD3>
+  	    <KEYWORD3>__logf</KEYWORD3>
+  	    <KEYWORD3>log</KEYWORD3>
+  	    
+  	     <KEYWORD3>uint</KEYWORD3>
+  	     <KEYWORD3>int1</KEYWORD3>
+  	     <KEYWORD3>uint1</KEYWORD3>
+  	     <KEYWORD3>int2</KEYWORD3>
+  	     <KEYWORD3>uint2</KEYWORD3>
+  	     <KEYWORD3>int3</KEYWORD3>
+  	     <KEYWORD3>uint3</KEYWORD3>
+  	     <KEYWORD3>int4</KEYWORD3>
+  	     <KEYWORD3>uint4</KEYWORD3>
+  	     <KEYWORD3>float1</KEYWORD3>
+  	     <KEYWORD3>float2</KEYWORD3>
+  	     <KEYWORD3>float3</KEYWORD3>
+  	     <KEYWORD3>float4</KEYWORD3>
+  	     <KEYWORD3>char1</KEYWORD3>
+  	     <KEYWORD3>char2</KEYWORD3>
+  	     <KEYWORD3>char3</KEYWORD3>
+  	     <KEYWORD3>char4</KEYWORD3>
+  	     <KEYWORD3>uchar1</KEYWORD3>
+  	     <KEYWORD3>uchar2</KEYWORD3>
+  	     <KEYWORD3>uchar3</KEYWORD3>
+  	     <KEYWORD3>uchar4</KEYWORD3>
+  	     <KEYWORD3>short1</KEYWORD3>
+  	     <KEYWORD3>short2</KEYWORD3>
+  	     <KEYWORD3>short3</KEYWORD3>
+  	     <KEYWORD3>short4</KEYWORD3>
+  	     <KEYWORD3>dim1</KEYWORD3>
+  	     <KEYWORD3>dim2</KEYWORD3>
+  	     <KEYWORD3>dim3</KEYWORD3>
+  	     <KEYWORD3>dim4</KEYWORD3>
             
             <KEYWORD3>catch</KEYWORD3>
             <KEYWORD3>class</KEYWORD3>
@@ -375,42 +404,7 @@
         </KEYWORDS>
     </RULES>
     
-    <RULES SET="CORE"
-        IGNORE_CASE="FALSE"
-        HIGHLIGHT_DIGITS="TRUE" DIGIT_RE="[0-9][0-9a-zA-Z]*">
-        <KEYWORDS>
-            <!-- CUDA Types -->
-                  <KEYWORD3> uint </KEYWORD3>
-                  <KEYWORD3> int1 </KEYWORD3>
-                  <KEYWORD3> uint1 </KEYWORD3>
-                  <KEYWORD3> int2 </KEYWORD3>
-                  <KEYWORD3> uint2 </KEYWORD3>
-                  <KEYWORD3> int3 </KEYWORD3>
-                  <KEYWORD3> uint3 </KEYWORD3>
-                  <KEYWORD3> int4 </KEYWORD3>
-                  <KEYWORD3> uint4 </KEYWORD3>
-                  <KEYWORD3> float1 </KEYWORD3>
-                  <KEYWORD3> float2 </KEYWORD3>
-                  <KEYWORD3> float3 </KEYWORD3>
-                  <KEYWORD3> float4 </KEYWORD3>
-                  <KEYWORD3> char1 </KEYWORD3>
-                  <KEYWORD3> char2 </KEYWORD3>
-                  <KEYWORD3> char3 </KEYWORD3>
-                  <KEYWORD3> char4 </KEYWORD3>
-                  <KEYWORD3> uchar1 </KEYWORD3>
-                  <KEYWORD3> uchar2 </KEYWORD3>
-                  <KEYWORD3> uchar3 </KEYWORD3>
-                  <KEYWORD3> uchar4 </KEYWORD3>
-                  <KEYWORD3> short1 </KEYWORD3>
-                  <KEYWORD3> short2 </KEYWORD3>
-                  <KEYWORD3> short3 </KEYWORD3>
-                  <KEYWORD3> short4 </KEYWORD3>
-                  <KEYWORD3> dim1 </KEYWORD3>
-                  <KEYWORD3> dim2 </KEYWORD3>
-                  <KEYWORD3> dim3 </KEYWORD3>
-                  <KEYWORD3> dim4 </KEYWORD3>
-        </KEYWORDS>
-    </RULES>
+
 
     <!-- Preprocessor specific rules -->
     <RULES SET="CPP"

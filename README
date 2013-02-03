@@ -2,7 +2,7 @@ This is a work-in-progress of a jEdit syntax highlighing file.
 
 Installation under Linux: 
 
-find you 'modes' folder, typically ~/.jedit/modes
+find your 'modes' folder, typically ~/.jedit/modes
 Save the cuda.xml in your 'modes'
 add the following line to modes/catalog:
 <MODE NAME="cuda"               FILE="cuda.xml"

@@ -8,6 +8,9 @@ add the following line to modes/catalog:
 <MODE NAME="cuda"               FILE="cuda.xml"
                                 FILE_NAME_GLOB="*.cu" />
 
+Note: may need to "chmod 777 cuda.xml" and select the cuda highlighting under buffer properties. Some combination of those two makes it work. 
+Let me know if you have questions. 
+
 Windows/Mac is probably similar.. but I havnt tested that
 
 
